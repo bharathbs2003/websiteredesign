@@ -3,50 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Redesigned Google</title>
+  <title>Styled Google Redesign</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f2e9f9, #e6f0ff);
+    }
+    .glass {
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+    .btn {
+      background: linear-gradient(90deg, #8e44ad, #6c5ce7);
+      color: white;
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+  </style>
 </head>
-<body class="bg-gray-100 flex flex-col min-h-screen">
+<body class="flex flex-col min-h-screen text-gray-800">
 
-  <!-- Navigation -->
-  <header class="flex justify-end p-4 space-x-4 text-sm text-gray-700">
-    <a href="#" class="hover:underline">Gmail</a>
-    <a href="#" class="hover:underline">Images</a>
-    <div class="w-8 h-8 bg-gray-300 rounded-full"></div>
+  <!-- Header -->
+  <header class="flex justify-end p-4 space-x-4 text-sm">
+    <a href="#" class="hover:text-purple-600">Gmail</a>
+    <a href="#" class="hover:text-purple-600">Images</a>
+    <div class="w-8 h-8 bg-purple-400 rounded-full"></div>
   </header>
 
-  <!-- Main Content -->
-  <main class="flex-grow flex flex-col items-center justify-center px-4">
-    <!-- Logo -->
-    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_92x30dp.png" alt="Google" class="mb-8 w-60">
+  <!-- Main -->
+  <main class="flex-grow flex flex-col items-center justify-center px-4 text-center">
+    <!-- Custom Logo -->
+    <h1 class="text-5xl font-bold text-purple-700 mb-8">Googlo</h1>
 
     <!-- Search Box -->
-    <div class="w-full max-w-xl flex items-center bg-white shadow-md rounded-full px-5 py-3 mb-6">
-      <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <div class="w-full max-w-xl flex items-center glass rounded-full px-6 py-4 mb-6">
+      <svg class="w-5 h-5 text-purple-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
       </svg>
-      <input type="text" placeholder="Search Google or type a URL" class="flex-grow outline-none text-gray-700" />
+      <input type="text" placeholder="Type your query here..." class="flex-grow outline-none bg-transparent text-gray-700 placeholder-purple-300" />
     </div>
 
     <!-- Buttons -->
     <div class="space-x-4">
-      <button class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded">Google Search</button>
-      <button class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded">I'm Feeling Lucky</button>
+      <button class="btn px-5 py-2 rounded-full">Search</button>
+      <button class="btn px-5 py-2 rounded-full">Surprise Me!</button>
     </div>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-200 text-sm text-gray-700 mt-auto py-4">
+  <footer class="bg-white text-sm text-gray-600 mt-auto py-4 shadow-inner">
     <div class="max-w-6xl mx-auto flex justify-between px-4">
       <div class="space-x-4">
-        <a href="#" class="hover:underline">About</a>
-        <a href="#" class="hover:underline">Advertising</a>
-        <a href="#" class="hover:underline">Business</a>
+        <a href="#" class="hover:text-purple-600">About</a>
+        <a href="#" class="hover:text-purple-600">Advertising</a>
+        <a href="#" class="hover:text-purple-600">Business</a>
       </div>
       <div class="space-x-4">
-        <a href="#" class="hover:underline">Privacy</a>
-        <a href="#" class="hover:underline">Terms</a>
-        <a href="#" class="hover:underline">Settings</a>
+        <a href="#" class="hover:text-purple-600">Privacy</a>
+        <a href="#" class="hover:text-purple-600">Terms</a>
+        <a href="#" class="hover:text-purple-600">Settings</a>
       </div>
     </div>
   </footer>
