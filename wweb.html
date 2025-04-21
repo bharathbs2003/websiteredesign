@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redesigned Google</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <header class="flex justify-end p-4 space-x-4 text-sm text-gray-700">
+    <a href="#" class="hover:underline">Gmail</a>
+    <a href="#" class="hover:underline">Images</a>
+    <div class="w-8 h-8 bg-gray-300 rounded-full"></div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow flex flex-col items-center justify-center px-4">
+    <!-- Logo -->
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_92x30dp.png" alt="Google" class="mb-8 w-60">
+
+    <!-- Search Box -->
+    <div class="w-full max-w-xl flex items-center bg-white shadow-md rounded-full px-5 py-3 mb-6">
+      <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
+      </svg>
+      <input type="text" placeholder="Search Google or type a URL" class="flex-grow outline-none text-gray-700" />
+    </div>
+
+    <!-- Buttons -->
+    <div class="space-x-4">
+      <button class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded">Google Search</button>
+      <button class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded">I'm Feeling Lucky</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 text-sm text-gray-700 mt-auto py-4">
+    <div class="max-w-6xl mx-auto flex justify-between px-4">
+      <div class="space-x-4">
+        <a href="#" class="hover:underline">About</a>
+        <a href="#" class="hover:underline">Advertising</a>
+        <a href="#" class="hover:underline">Business</a>
+      </div>
+      <div class="space-x-4">
+        <a href="#" class="hover:underline">Privacy</a>
+        <a href="#" class="hover:underline">Terms</a>
+        <a href="#" class="hover:underline">Settings</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
